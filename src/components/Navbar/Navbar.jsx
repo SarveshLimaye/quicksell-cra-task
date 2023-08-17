@@ -3,11 +3,13 @@ import "./Navbar.css";
 import { GiSettingsKnobs } from "react-icons/gi";
 import { AiOutlineDown } from "react-icons/ai";
 
-export default function Navbar() {
+export default function Navbar({ getShow }) {
   const [show, setShow] = useState(false);
   const handleClick = () => {
     setShow(!show);
+    getShow(!show);
   };
+
   return (
     <>
       <div className="navbar">
@@ -19,25 +21,6 @@ export default function Navbar() {
           </div>
         </button>
       </div>
-      {show ? (
-        <div className="display-modal">
-          <div className="display-modal-content">
-            <span className="display-modal-text">Grouping</span>
-            <select className="display-options">
-              <option value="status">Status</option>
-              <option value="user">User</option>
-              <option value="priority">Priority</option>
-            </select>
-          </div>
-          <div className="display-modal-content">
-            <span className="display-modal-text">Ordering</span>
-            <select className="display-options">
-              <option value="priority">Priority</option>
-              <option value="title">Title</option>
-            </select>
-          </div>
-        </div>
-      ) : null}
     </>
   );
 }
