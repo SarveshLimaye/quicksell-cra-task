@@ -1,0 +1,85 @@
+.navbar {
+  display: flex;
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
+  background-color: white;
+}
+
+.display-btn {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  padding-bottom: 0.15rem;
+  margin: 0.75rem;
+  margin-left: 1.25rem;
+  border-radius: 0.275rem;
+  border-width: 0.1px;
+  border-style: solid;
+  background-color: white;
+}
+
+.icon-div {
+  display: flex;
+  flex-direction: row;
+}
+
+.display-text {
+  margin-top: 0.245rem;
+}
+
+.giicon {
+  margin-top: 0.275rem;
+  margin-right: 0.5rem;
+  font-weight: 600;
+  transform: rotate(90deg);
+}
+
+.down-arrow {
+  margin-left: 0.5rem;
+  margin-top: 0.375rem;
+}
+
+.display-modal {
+  margin: 0.75rem;
+  margin-left: 1.25rem;
+  border-radius: 0.375rem;
+  border-width: 1px;
+  border-color: #e5e7eb;
+  background-color: #f9fafb;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  width: 350px;
+  height: 110px;
+  margin-top: -10px;
+}
+
+.display-modal-content {
+  display: flex;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+  margin-top: 0.2rem;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.display-modal-text {
+  margin-left: 0.75rem;
+  padding-top: 0.125rem;
+  padding-bottom: 0.125rem;
+  margin-top: 0.5rem;
+  font-weight: 600;
+  margin-left: 0.75rem;
+  color: #9ca3af;
+}
+
+.display-options {
+  padding-top: 0.125rem;
+  padding-bottom: 0.125rem;
+  padding-left: 0.5rem;
+  padding-right: 4rem;
+  margin-right: 0.5rem;
+  margin-top: 0.7rem;
+  border-width: 1px;
+  border-color: #e5e7eb;
+  vertical-align: top;
+  background-color: #ffffff;
+}
