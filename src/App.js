@@ -18,6 +18,7 @@ function App() {
       );
       const data = await response.json();
       setTickets(data.tickets);
+      setUsers(data.users);
     };
 
     const groupAndSortData = () => {
@@ -76,7 +77,7 @@ function App() {
           </div>
         </div>
       ) : null}
-      <TicketList groupedTickets={groupedTickets} />
+      <TicketList groupedTickets={groupedTickets} users={users} />
     </div>
   );
 }
