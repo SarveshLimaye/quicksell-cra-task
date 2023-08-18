@@ -11,7 +11,7 @@ export default function TicketList({ groupedTickets, users }) {
   return (
     <div className="grid">
       {Object.keys(groupedTickets).map((group, index) => (
-        <div key={group}>
+        <div key={group} className="grid-items">
           <div>
             {group === "0" ? <span>No Priority</span> : null}
             {group === "1" ? <span>Low</span> : null}
