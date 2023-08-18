@@ -1,8 +1,58 @@
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-  gap: 10px;
+  gap: 30px;
   max-width: 1200px;
+}
+
+.heading-icon {
+  margin-top: 1.1rem;
+  font-size: 0.8rem;
+  margin-left: 0.2rem;
+  font-weight: 40;
+  color: #9ca3af;
+  margin-right: 0.5rem;
+  border: #4b5563;
+}
+
+.inprogress-icon {
+  margin-top: 1.1rem;
+  padding-left: 0.5rem;
+  font-size: 0.8em;
+  margin-left: 0.2rem;
+  height: 0.8rem;
+  font-weight: 40;
+  color: #fde047;
+  margin-right: 0;
+  transform: rotate(180deg);
+}
+
+.status-title {
+  font-size: 0.92rem;
+  font-weight: 40;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  margin-right: 6.5rem;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.grid-title {
+  font-size: 0.84rem;
+  font-weight: 40;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  margin-right: 4.1rem;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.user-image {
+  width: 1.8rem;
+  height: 1.8rem;
+  margin-right: 0.4rem;
+  margin-top: 0.5rem;
+  margin-left: 0.5rem;
 }
 
 @media (min-width: 768px) {
@@ -28,5 +78,23 @@
 
 .grid-items {
   padding: 20px;
-  text-align: center;
+}
+
+.heading-div {
+  display: flex;
+  width: 14.8rem;
+  flex-direction: row;
+}
+
+.icon-div {
+  align-items: flex-end;
+}
+
+.icon {
+  margin-bottom: 1rem;
+  margin-right: 2.5rem;
+  font-size: 0.8rem;
+  font-weight: 40;
+  color: #4b5563;
+  margin-right: 0.5rem;
 }

@@ -16,7 +16,7 @@
 }
 
 .card-title {
-  font-size: 0.7rem;
+  font-size: 0.65rem;
   margin-left: 0.3rem;
 }
 
@@ -34,8 +34,8 @@
 }
 
 .card-image {
-  width: 1.2rem;
-  height: 1.2rem;
+  width: 1.5rem;
+  height: 1.5rem;
   margin-left: 10rem;
   padding-top: 0.1rem;
   margin-top: 0.2rem;
