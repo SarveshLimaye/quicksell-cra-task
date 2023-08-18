@@ -70,7 +70,7 @@ export default function TicketList({ groupedTickets, users }) {
               <>
                 <BsFillExclamationSquareFill
                   className="heading-icon"
-                  style={{ color: "red", "border-radius": "0%" }}
+                  style={{ color: "#fb923c", "border-radius": "0%" }}
                 />
                 <span className="grid-title">Urgent</span>
               </>

@@ -42,7 +42,7 @@ export default function TicketCard({ ticket, group }) {
           {ticket.priority === 4 ? (
             <BsFillExclamationSquareFill
               className="card-status"
-              style={{ color: "red" }}
+              style={{ color: "#fb923c" }}
             />
           ) : null}
         </div>
