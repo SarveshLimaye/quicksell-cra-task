@@ -1,6 +1,10 @@
 import React from "react";
 import "./TicketCard.css";
-import { BsThreeDots } from "react-icons/bs";
+import { BsThreeDots, BsFillExclamationSquareFill } from "react-icons/bs";
+import { GiNetworkBars } from "react-icons/gi";
+
+import low_network from "../../assets/low_network.PNG";
+import medium_network from "../../assets/medium_network.PNG";
 
 export default function TicketCard({ ticket, group }) {
   console.log(group);
@@ -20,7 +24,24 @@ export default function TicketCard({ ticket, group }) {
 
       <div className="card-footer">
         <div>
-          <BsThreeDots className="card-status" />
+          {ticket.priority === 0 ? (
+            <BsThreeDots className="card-status" />
+          ) : null}
+          {ticket.priority === 1 ? (
+            <img src={low_network} className="card-status" alt="low" />
+          ) : null}
+          {ticket.priority === 2 ? (
+            <img src={medium_network} className="card-status" alt="medium" />
+          ) : null}
+          {ticket.priority === 3 ? (
+            <GiNetworkBars className="card-status" />
+          ) : null}
+          {ticket.priority === 4 ? (
+            <BsFillExclamationSquareFill
+              className="card-status"
+              style={{ color: "red" }}
+            />
+          ) : null}
         </div>
         <div className="card-tag">
           <div className="card-tag-icon"></div>
