@@ -38,7 +38,7 @@ export default function TicketList({ groupedTickets, users }) {
                   style={{
                     width: "20px",
                     height: "10px",
-                    marginTop: "20px",
+                    marginTop: "15px",
                   }}
                   alt="medium"
                 />
@@ -53,7 +53,7 @@ export default function TicketList({ groupedTickets, users }) {
                   style={{
                     width: "20px",
                     height: "10px",
-                    marginTop: "20px",
+                    marginTop: "15px",
                   }}
                   alt="medium"
                 />
@@ -81,7 +81,7 @@ export default function TicketList({ groupedTickets, users }) {
                 {group === "Todo" ? (
                   <BsCircle
                     className="heading-icon"
-                    style={{ borderRadius: "100%" }}
+                    style={{ borderRadius: "100%", marginTop: "18px" }}
                   />
                 ) : null}
                 {group === "In progress" ? (
@@ -108,7 +108,9 @@ export default function TicketList({ groupedTickets, users }) {
                   className="user-image"
                 />
 
-                <span className="grid-title">{getUserName(group)}</span>
+                <span className="grid-title" style={{ marginRight: "4.1rem" }}>
+                  {getUserName(group)}
+                </span>
               </>
             ) : null}
             <div className="icon-div">
