@@ -10,11 +10,15 @@
   padding-left: 0.75rem;
   padding-right: 0.75rem;
   padding-bottom: 0.15rem;
+  padding-top: 0.15rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
   margin: 0.75rem;
   margin-left: 1.25rem;
   border-radius: 0.275rem;
   border-width: 0.1px;
   border-style: solid;
+  border-color: #e5e7eb;
   background-color: white;
 }
 

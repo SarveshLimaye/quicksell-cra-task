@@ -34,7 +34,10 @@ export default function TicketCard({ ticket, group }) {
             <img src={medium_network} className="card-status" alt="medium" />
           ) : null}
           {ticket.priority === 3 ? (
-            <GiNetworkBars className="card-status" />
+            <GiNetworkBars
+              className="card-status"
+              style={{ color: "#9ca3af" }}
+            />
           ) : null}
           {ticket.priority === 4 ? (
             <BsFillExclamationSquareFill
