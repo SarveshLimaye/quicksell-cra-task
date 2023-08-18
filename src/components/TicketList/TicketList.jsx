@@ -19,6 +19,10 @@ export default function TicketList({ groupedTickets, users }) {
     return user ? user.name : "Unknown User";
   };
 
+  const getGroupLength = (group) => {
+    return groupedTickets[group].length;
+  };
+
   return (
     <div className="grid">
       {Object.keys(groupedTickets).map((group, index) => (
@@ -113,6 +117,7 @@ export default function TicketList({ groupedTickets, users }) {
                 </span>
               </>
             ) : null}
+            <span className="group-length">{getGroupLength(group)}</span>
             <div className="icon-div">
               <AiOutlinePlus className="icon" />
               <BsThreeDots className="icon" />

@@ -57,13 +57,21 @@
   margin-left: 0.5rem;
 }
 
+.group-length {
+  font-size: 0.75rem;
+  margin-top: 0.85rem;
+
+  font-weight: 40;
+  color: #4b5563;
+}
+
 .grid-items {
   padding: 20px;
 }
 
 .heading-div {
   display: flex;
-  width: 14.8rem;
+  width: 15.1rem;
   flex-direction: row;
   justify-content: space-between;
 }
@@ -75,6 +83,7 @@
   font-size: 0.8rem;
   font-weight: 40;
   color: #4b5563;
+
   margin-right: 0.5rem;
 }
 
